@@ -1,0 +1,146 @@
+<!--NAVBAR   SECTION 1-->
+
+    <nav class="section1">
+        <div>
+        <a class="name">Aadhyy</a>
+        </div>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    /* NAVBAR SECTION 1 */
+
+.section1{
+    background-color:  rgb(12, 18, 35);
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.navbar{
+    padding-right: 50px;
+}
+
+.name{                                              /*------------------NAME------------------*/ 
+    color:  rgb(254 197 68);
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+
+.navbar a{                                      /*----------NAVBAR SECTION DETAILS-----------------*/
+    text-decoration: none;
+    color:  rgb(234, 240, 255);
+    padding: 0px 25px 0px 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR BASE */
+.section1 {
+  background-color: rgb(12, 18, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar name */
+.name {
+  color: rgb(214, 170, 26);
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.name:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgb(214, 170, 26);
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover & focus effect on links */
+.navbar a:hover,
+.navbar a:focus {
+  color: rgb(214, 170, 26);
+  transform: scale(1.05);
+}
+
+/* Underline animation */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgb(214, 170, 26);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  width: 100%;
+}
+
+/* Optional: Add shadow on scroll */
+body.scrolled .section1 {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background-color: rgb(14, 20, 40);
+}

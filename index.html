@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/aadhy.png" type="image/png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "LaUX8nEIPREnyoS04",
+      });
+   })();
+</script>
+</head>
+<body>
+
+      <!-- SECTION-1 NAVBAR -->
+  <nav class="section1">
+    <div class="nav-left">
+      <a class="name">Portfolio</a>
+    </div>
+
+    <div class="nav-right">
+      <div class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+    <!-- SECTION-2 HOME-->
+
+    <div class="home" id="home">
+        <div class="details">
+            <p id="hello">Hello! I'm</p>
+            <p id="fname">Abdul Rahman Adil</p>
+            <p id="role">Web Developer</p>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/abdlrhmnadil/" target="_blank"><i class="fa-brands fa-square-linkedin icon" ></i></a>
+                <a href="https://github.com/adil2133-git" target="_blank"><i class="fa-brands fa-square-github icon"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adilaadi340@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope icon"></i></a>
+            </div>
+            <a href="#contact"><button id="btn1">Contact Me</button></a>
+        </div>
+
+        <div class="image">
+            <img src="aadhyy2.png" alt="Image of Adil" id="img">
+        </div>
+    </div>
+
+
+    <!-- SECTION-3 ABOUT -->
+
+    <div class="about" id="about">
+        <br>
+        <p id="aboutheading">About</p>
+        <div class="aboutdetails">
+            <div class="info">I'm a passionate Web Developer with hands-on experience in HTML, CSS, and JavaScript. I specialize in creating clean, responsive, and user-friendly websites that bring ideas to life on the web. My focus is on writing efficient code, crafting elegant designs, and continuously learning new technologies to build engaging digital experiences.</div>
+            <div class="edudetails">
+                <p id="edu">Education</p>
+                <p id="course">Bachelor of Computer Application</p>
+                <p id="college">P A First Grade College</p>
+                <p id="duration"><small>2022-2025</small></p>
+            </div>
+        </div>
+        <a href="https://drive.google.com/uc?export=download&id=1xunYb1UQtoRh1na25DuFIYZRok0UtnQw"><button id="btncv">Download CV</button></a>
+    </div>
+
+
+
+
+    <!-- SECTION-4   SKILLS -->
+
+    <div class="skillmain" id="skill">
+        <br>
+        <p class="skill">Skills</p>
+        <div class="logos">
+            <div class="img1">
+                <img src="html-icon.png" class="logoimg">
+                <p class="lang">HTML</p>
+            </div>
+            <div class="img2">
+                <img src="CSS-icon.png" class="logoimg">
+                <p class="lang">CSS</p>
+            </div>
+            <div class="img3">
+                <img src="JavaScript-icon.png" class="logoimg">
+                <p class="lang">JavaScript</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SECTION-5   PROJECTS -->
+
+    <div class="projectmain" id="project">
+        <br>
+        <p class="projectheading">Projects</p>
+        <div class="projects">
+            <div class="projectcard">
+                <img src="clone.png" alt="" class="projectimg">
+                <p class="title">Trivago Website Clone</p>
+                <p class="language">HTML, CSS</p>
+            </div>
+            <div class="projectcard">
+                <img src="clgproj.png" alt="" class="projectimg">
+                <p class="title">E-commerce Fashion</p>
+                <p class="language">React, Firebase</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SECTION-6   CONTACT -->
+
+    <div class="contactmain" id="contact">
+        <br>
+        <p class="contactheading">Get In Touch</p>
+        <div class="contact-container">
+            <div class="form">
+                <p class="formp">Just Say Hello</p>
+                <form action="">
+                    <input type="text" name="name" class="formdata" id="name" placeholder="Name"><br><br>
+                    <input type="email" name="email" class="formdata" id="email" placeholder="Email"><br><br>
+                    <input type="text" name="subject" class="formdata" id="subject" placeholder="Subject"><br><br>
+                    <textarea class="formdata" id="message" placeholder="Message" rows="4"></textarea><br><br>
+                    <button type="button" class="submitbtn" onclick="sendMail()">Send Message</button>
+                </form>
+            </div>
+            <div class="contdetails">
+                <p id="coinfo">Contact Info</p>
+                <div class="email-container">
+                    <i class="fa-solid fa-envelope mailcon"></i>
+                    <div>
+                        <p id="mail">Email</p>
+                        <p id="mymail"><small>adilaadi340@gmail.com</small></p>
+                    </div>
+                </div>
+                <div class="phone-container">
+                    <i class="fa-solid fa-phone phonecon"></i>
+                    <div>
+                        <p id="call">Phone</p>
+                        <p><small>+91 7994931322</small></p>
+                    </div>
+                </div>
+                <div class="loc-container">
+                    <i class="fa-solid fa-location-dot locon"></i>
+                    <div>
+                        <p id="location">Location</p>
+                        <p><small>Kasaragod, kerala, India</small></p>
+                    </div>
+                </div>
+                <div>
+                    <p id="profile">Visit My Social Profile</p>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/abdlrhmnadil/" target="_blank"><i class="fa-brands fa-square-linkedin icon" ></i></a>
+                        <a href="https://github.com/adil2133-git" target="_blank"><i class="fa-brands fa-square-github icon"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adilaadi340@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="index.js"></script>
+
+    
+</body>
+</html>
